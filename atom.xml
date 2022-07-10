@@ -3,11 +3,11 @@
   <title>新的学习网站</title>
   
   <subtitle>（由“Study English”迁移）</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://orson2010.github.io/new_study/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://orson2010.github.io/new_study/"/>
   <updated>2022-07-10T11:39:39.282Z</updated>
-  <id>http://example.com/</id>
+  <id>https://orson2010.github.io/new_study/</id>
   
   <author>
     <name>梦柏</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>UP的常见八种用法</title>
-    <link href="http://example.com/2022/05/08/UP_Use/"/>
-    <id>http://example.com/2022/05/08/UP_Use/</id>
+    <link href="https://orson2010.github.io/new_study/2022/05/08/UP_Use/"/>
+    <id>https://orson2010.github.io/new_study/2022/05/08/UP_Use/</id>
     <published>2022-05-08T03:05:00.000Z</published>
     <updated>2022-07-10T11:39:39.282Z</updated>
     
@@ -34,7 +34,7 @@
     
     
     
-    <category term="英语" scheme="http://example.com/tags/%E8%8B%B1%E8%AF%AD/"/>
+    <category term="英语" scheme="https://orson2010.github.io/new_study/tags/%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
