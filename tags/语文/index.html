@@ -34,62 +34,6 @@
 
     
     
-    
-        <script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        
-            load: ['[tex]/mhchem'],
-        
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        
-            packages: {'[+]': ['mhchem']},
-        
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
           
 
     
@@ -272,103 +216,26 @@
 </v-row>
 
                             <v-card class="elevation-2 index-card">
-  
-    <article class="index-article">
-      
-      <div class="index-article-header">
-        <v-row no-gutters>
-          <v-col cols="auto">
-            <div class="index-article-header-date font-weight-medium">
-              2022-07-11
-            </div>
-          </v-col>
-          <v-spacer></v-spacer>
-          <v-col cols="auto">
-            
-              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
-                
-                  <span class="index-article-header-tag-content">
-                    <v-icon>fas fa-tag</v-icon>
-                    <a rel="tag" href = /new_study/tags/%E8%AF%AD%E6%96%87/ >语文</a>
-                  </span>
-                
-              </v-card>
-            
-          </v-col>
-        </v-row>
-        <span>
-          
-            <a class="index-article-header-category font-weight-bold" href="/new_study/2022/07/11/wen01/">未分类></a>
-           
-        </span> 
-        <a class="index-article-header-title font-weight-medium" href="/new_study/2022/07/11/wen01/">暑假文言文预习（一）</a>
-      </div>
-      
-      <div class="index-article-content">
+    <v-timeline class="timeline" dense>
+        <v-timeline-item class="timeline-header" color="secondary lighten-2">
+            <span class="timeline-title">语文</span>
+            <span class="timeline-subtitle">标签</span>
+        </v-timeline-item>
         
-          暑假文言文预习 -《曾子杀彘》《曾子杀彘》原文曾子【1】之妻之【10】市【2】，其子随之而泣。其母曰：“汝还，顾反【13、14】为女【16】杀彘【3】。”妻适市来【4】，曾子欲【18】捕彘杀【17】之。妻止【19】之曰：“特【15】与婴儿戏耳。”曾子曰：“婴儿非与戏【5】也。婴儿非有知也，待【6】父母而学者也，听父母之教。今子【7】欺之，是【12】教子欺也。母欺子，子而【8】不信其母，非所以成教也【9】。”遂【20】烹【11】彘也。
-注释【1】曾子（前505～前432）：曾参，春秋末年鲁国人，孔子的弟子，字子舆，被尊称为曾子。性情沉静，举止稳重，为人谨慎，待人谦恭，以孝著称。曾提出“慎终...
+            <v-timeline-item fill-dot small color="secondary lighten-2">
+                <div class="timeline-item-post d-none d-md-block">
+                    <span class="timeline-item-time">2022.07.11</span>
+                    <a href="/new_study/2022/07/11/wen01/" class="timeline-item-title">暑假文言文预习（一）</a>
+                </div>
+                <div class="timeline-item-post-mobile d-block d-md-none">
+                    <span class="timeline-item-time">2022.07.11</span><br>
+                    <a href="/new_study/2022/07/11/wen01/" class="timeline-item-title">暑假文言文预习（一）</a>
+                </div>
+                <v-divider></v-divider>
+            </v-timeline-item>
         
-      </div>
-      
-      <div class="index-article-readmore ">
-        <v-btn text href="/new_study/2022/07/11/wen01/">阅读更多</v-btn>
-      </div>
-      <v-divider></v-divider>
-    </article> 
-  
-    <article class="index-article">
-      
-      <div class="index-article-header">
-        <v-row no-gutters>
-          <v-col cols="auto">
-            <div class="index-article-header-date font-weight-medium">
-              2022-05-08
-            </div>
-          </v-col>
-          <v-spacer></v-spacer>
-          <v-col cols="auto">
-            
-              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
-                
-                  <span class="index-article-header-tag-content">
-                    <v-icon>fas fa-tag</v-icon>
-                    <a rel="tag" href = /new_study/tags/%E8%8B%B1%E8%AF%AD/ >英语</a>
-                  </span>
-                
-              </v-card>
-            
-          </v-col>
-        </v-row>
-        <span>
-          
-            <a class="index-article-header-category font-weight-bold" href="/new_study/2022/05/08/UP_Use/">未分类></a>
-           
-        </span> 
-        <a class="index-article-header-title font-weight-medium" href="/new_study/2022/05/08/UP_Use/">UP的常见八种用法</a>
-      </div>
-      
-      <div class="index-article-content">
-        
-          UP的常见的八种用法UP，是英语中一个很重要的单词，有着很多种用法，本期文章将介绍UP的八种常见的用法和短语举例！
-我们分八组来记忆与up搭配的词组一、up的基本含义是“起来，向上”：
-get up —— 起床                  2. hang up —— 挂起来，挂断电话 
-
-keep up with —— 跟上，不落后      4. look up to —— 尊敬，敬佩 
-
-pick up —— 捡起                 6. put up —— 立起，建造 
-
-wake up —— 醒来                8. stand up —— 起...
-        
-      </div>
-      
-      <div class="index-article-readmore ">
-        <v-btn text href="/new_study/2022/05/08/UP_Use/">阅读更多</v-btn>
-      </div>
-      <v-divider></v-divider>
-    </article> 
-   
-</v-card>  
+    </v-timeline>
+</v-card>
 
          
                             <div id="mobile-footer" class="d-block d-md-none">
