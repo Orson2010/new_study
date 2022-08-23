@@ -1,401 +1,452 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    
-    <meta name="renderer" content="webkit"/>
-    <meta name="force-rendering" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
-    
-    
-        <link rel="shortcut icon" href="/new_study/images/mi.jpg">
-    
-     
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.30/dist/vuetify.min.css" rel="stylesheet">
-    
-<link rel="stylesheet" href="/new_study/css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     
+    <title>新的学习网站</title>
+
+    <meta name="description" content="一个学习网站，介绍见关于">
+    <meta name="keywords" content="English,蒲江，蒲江实验中学，学习，语文，英语，数学，博客，初中，初中生搭博客">
+
     
 
 
 
-
-
-
-
-    
-    
-    
-        <script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        
-            load: ['[tex]/mhchem'],
-        
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:locale" content="zh" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://orson2010.github.io/new_study/index.html" />
+    <meta property="og:site_name" content="Mr. Augustine" />
+    <meta property="article:publisher" content="" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "",
+            "description": "",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Mr. Augustine"
+            },
         }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        
-            packages: {'[+]': ['mhchem']},
-        
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-          
+    </script>
+
 
     
+
     
+
     
+
     
-    <title>
-          
-            新的学习网站
-        
-    </title>
+
     
+
     
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    
+
+    
+
+    
+<link rel="stylesheet" href="/new_study/dist/build.css?v=1654266144177.css">
+
+
+    
+<link rel="stylesheet" href="/new_study/dist/custom.css?v=1654266144177.css">
+
+
+    <script>
+        window.isPost = false
+        window.aomori = {
+            
+            gitalk: {
+                enable: true,
+                clientID: "b2c8dcba32c87b5b0c69",
+                clientSecret: "298205e3b776d6669f3b88ec464910ff7ef6b737",
+                repo: "gitalk-comments",
+                owner: "Orson2010",
+                admin: ["Orson2010",],
+                distractionFreeMode: true  // Facebook-like distraction free mode
+            },
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = true
+        window.aomori_search_algolia = false
+
+    </script>
+
 <meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/new_study/atom.xml" title="新的学习网站" type="application/atom+xml">
 </head>
-<body>
-    <div id="app">
-        <v-app>
-            <v-content id="page">
-                <v-container fluid>
-                    <v-row>
-                        <v-col cols="2" class="d-none d-md-block">
-                            <div id="sidebar" class="float-right">
-    <a href="/new_study/" rel="home">
-        <v-avatar size=96>
-            <img id="logo" src="/new_study/images/m1.jpg">     
-        </v-avatar> 
-    </a>
-    <v-divider></v-divider>
-    <div class="mini-menu">
-        <v-btn icon href="/new_study/">
-            <v-icon>home</v-icon>
-        </v-btn>
-        <v-btn icon href="/new_study/categories/">
-            <v-icon>folder</v-icon>
-        </v-btn>
-        <v-btn icon href="/new_study/tags/">
-            <v-icon>bookmark</v-icon>
-        </v-btn>
-        <v-btn icon @click="SetNightMode">
-            <v-icon>{{ nightMode }}</v-icon>
-        </v-btn>
-    </div>
-    <v-list id="main-menu" class="font-weight-bold" flat>
-        
-            
-            <v-list-item href="/new_study/archives/" link>
-            <v-list-item-icon><v-icon>archive</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                归档
-            </v-list-item-content>
-            </v-list-item>
-        
-            
-            <v-list-item href="/new_study/about/" link>
-            <v-list-item-icon><v-icon>account_circle</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                关于
-            </v-list-item-content>
-            </v-list-item>
-        
-            
-            <v-list-item href="/new_study/tags/%E8%AF%AD%E6%96%87/" link>
-            <v-list-item-icon><v-icon>book</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                语文
-            </v-list-item-content>
-            </v-list-item>
-        
-            
-            <v-list-item href="/new_study/tags/%E6%95%B0%E5%AD%A6/" link>
-            <v-list-item-icon><v-icon>code</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                数学
-            </v-list-item-content>
-            </v-list-item>
-        
-            
-            <v-list-item href="/new_study/tags/%E8%8B%B1%E8%AF%AD/" link>
-            <v-list-item-icon><v-icon>language</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                英语
-            </v-list-item-content>
-            </v-list-item>
-        
-    </v-list>
-    <v-divider></v-divider>
-    
-        <v-list id="sub-menu" class="font-weight-medium" dense>
-            
-        </v-list>    
-    
 
-    <div id="footer">
-        <div class="footer-social">
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
             
+            <div class="header-type-avatar avatar avatar-sm">
+                <img src="/images/avatar.jpg" alt="Mr. Augustine">
+            </div>
+            
+            <div class="header-type-inner">
                 
-                <v-btn icon href="https://github.com/Orson2010" target="_blank">
-                    <v-icon>fab fa-github</v-icon>
-                </v-btn>
-            
+                    <div id="typed-strings" style="display:none">
+                        <p>新的学习网站</p>
+                    </div>
+                    <a class="header-type-title" id="typed" href="/"></a>
+                
+    
+                
+            </div>
         </div>
-        <v-divider></v-divider>
-        <div class="footer-content">
-            
-                <span id="busuanzi_container_site_uv" style="display: none;"> 
-                    总访客量 <span id="busuanzi_value_site_uv"></span>
-                </span>
-                <br>
-            
-            <span>Theme: <a target="_blank" rel="noopener" href="https://github.com/kb1000fx/hexo-theme-insulin">Insulin</a></span><br>
-            <span>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></span><br>
-            <span>
-                &copy; 2022 - 2022 
-                梦柏
-            </span>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/new_study/">Home</a>
+                
+                <a href="/new_study/archives">Archives</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/new_study/">Home</a>
+                    
+                    <a href="/new_study/archives">Archives</a>
+                    
+                </div>
+            </div>
         </div>
     </div>
+
 </div>
 
-                        </v-col>
-                        <v-col cols="12" md="10">
-                            <v-row>
-  <v-col cols="12" md="8" align-self="end">
-    <div id="site-header">
-      <div id="site-title">
-        <a href="/new_study/" rel="home">新的学习网站</a>
-      </div>
-      <div id="site-description">一个学习网站，介绍见关于</div>
-      <div id="mobile-menu" class="d-block d-md-none">
-        <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-inner-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,true)"></v-text-field>
-        <div class="mobile-mini-menu">
-          <v-btn icon href="/">
-              <v-icon>home</v-icon>
-          </v-btn>
-          <v-btn icon href="/categories/">
-              <v-icon>folder</v-icon>
-          </v-btn>
-          <v-btn icon href="/tags/">
-              <v-icon>bookmark</v-icon>
-          </v-btn>
-          <v-btn icon @click="SetNightMode">
-              <v-icon>{{ nightMode }}</v-icon>
-          </v-btn>
-          
-            
-            <v-btn icon href="/new_study/archives/">
-              <v-icon>archive</v-icon>
-            </v-btn>
-          
-            
-            <v-btn icon href="/new_study/about/">
-              <v-icon>account_circle</v-icon>
-            </v-btn>
-          
-            
-            <v-btn icon href="/new_study/tags/%E8%AF%AD%E6%96%87/">
-              <v-icon>book</v-icon>
-            </v-btn>
-          
-            
-            <v-btn icon href="/new_study/tags/%E6%95%B0%E5%AD%A6/">
-              <v-icon>code</v-icon>
-            </v-btn>
-          
-            
-            <v-btn icon href="/new_study/tags/%E8%8B%B1%E8%AF%AD/">
-              <v-icon>language</v-icon>
-            </v-btn>
-          
-        </div>
-      </div>    
-    </div>
-  </v-col>  
-  <v-col cols="4" align-self="end" class="d-none d-md-block">
-    <v-col align-self="end">
-      <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,true)"></v-text-field>
-    </v-col> 
-  </v-col>
-</v-row>
-
-                            <v-card class="elevation-2 index-card">
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="index">
   
-    <article class="index-article">
-      
-      <div class="index-article-header">
-        <v-row no-gutters>
-          <v-col cols="auto">
-            <div class="index-article-header-date font-weight-medium">
-              2022-07-11
-            </div>
-          </v-col>
-          <v-spacer></v-spacer>
-          <v-col cols="auto">
-            
-              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
-                
-                  <span class="index-article-header-tag-content">
-                    <v-icon>fas fa-tag</v-icon>
-                    <a rel="tag" href = /new_study/tags/%E8%AF%AD%E6%96%87/ >语文</a>
-                  </span>
-                
-              </v-card>
-            
-          </v-col>
-        </v-row>
-        <span>
-          
-            <a class="index-article-header-category font-weight-bold" href="/new_study/2022/07/11/wen01/">未分类></a>
-           
-        </span> 
-        <a class="index-article-header-title font-weight-medium" href="/new_study/2022/07/11/wen01/">暑假文言文预习（一）</a>
-      </div>
-      
-      <div class="index-article-content">
-        
-          暑假文言文预习 -《曾子杀彘》《曾子杀彘》原文曾子【1】之妻之【10】市【2】，其子随之而泣。其母曰：“汝还，顾反【13、14】为女【16】杀彘【3】。”妻适市来【4】，曾子欲【18】捕彘杀【17】之。妻止【19】之曰：“特【15】与婴儿戏耳。”曾子曰：“婴儿非与戏【5】也。婴儿非有知也，待【6】父母而学者也，听父母之教。今子【7】欺之，是【12】教子欺也。母欺子，子而【8】不信其母，非所以成教也【9】。”遂【20】烹【11】彘也。
-注释【1】曾子（前505～前432）：曾参，春秋末年鲁国人，孔子的弟子，字子舆，被尊称为曾子。性情沉静，举止稳重，为人谨慎，待人谦恭，以孝著称。曾提出“慎终...
-        
-      </div>
-      
-      <div class="index-article-readmore ">
-        <v-btn text href="/new_study/2022/07/11/wen01/">阅读更多</v-btn>
-      </div>
-      <v-divider></v-divider>
-    </article> 
-  
-    <article class="index-article">
-      
-      <div class="index-article-header">
-        <v-row no-gutters>
-          <v-col cols="auto">
-            <div class="index-article-header-date font-weight-medium">
-              2022-05-08
-            </div>
-          </v-col>
-          <v-spacer></v-spacer>
-          <v-col cols="auto">
-            
-              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
-                
-                  <span class="index-article-header-tag-content">
-                    <v-icon>fas fa-tag</v-icon>
-                    <a rel="tag" href = /new_study/tags/%E8%8B%B1%E8%AF%AD/ >英语</a>
-                  </span>
-                
-              </v-card>
-            
-          </v-col>
-        </v-row>
-        <span>
-          
-            <a class="index-article-header-category font-weight-bold" href="/new_study/2022/05/08/UP_Use/">未分类></a>
-           
-        </span> 
-        <a class="index-article-header-title font-weight-medium" href="/new_study/2022/05/08/UP_Use/">UP的常见八种用法</a>
-      </div>
-      
-      <div class="index-article-content">
-        
-          UP的常见的八种用法UP，是英语中一个很重要的单词，有着很多种用法，本期文章将介绍UP的八种常见的用法和短语举例！
-我们分八组来记忆与up搭配的词组一、up的基本含义是“起来，向上”：
-get up —— 起床                  2. hang up —— 挂起来，挂断电话 
-
-keep up with —— 跟上，不落后      4. look up to —— 尊敬，敬佩 
-
-pick up —— 捡起                 6. put up —— 立起，建造 
-
-wake up —— 醒来                8. stand up —— 起...
-        
-      </div>
-      
-      <div class="index-article-readmore ">
-        <v-btn text href="/new_study/2022/05/08/UP_Use/">阅读更多</v-btn>
-      </div>
-      <v-divider></v-divider>
-    </article> 
-   
-</v-card>  
-
-         
-                            <div id="mobile-footer" class="d-block d-md-none">
-                                <v-divider></v-divider>
-                                <div id="mobile-footer-content">
-                                    <span>Theme: <a target="_blank" rel="noopener" href="https://github.com/kb1000fx/hexo-theme-insulin">Insulin</a> &nbsp; Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></span><br>
-                                    <span> &copy; 2022 - 2022 梦柏</span>
-                                </div>
-                            </div>                   
-                        </v-col>                                            
-                    </v-row>
-                </v-container>
-            </v-content>
-        </v-app>
-    </div>
     
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.30"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/js-base64@3.5.2/base64.min.js"></script>
-
-<script src="/new_study/js/main.js"></script>
+      <article
+id="post-wen01"
+class="article article-type-post"
+>
 
 
 
+<div class="article-inner">
+    
 
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/new_study/2022/07/11/wen01/">暑假文言文预习（一）</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <h2 id="暑假文言文预习-《曾子杀彘》"><a href="#暑假文言文预习-《曾子杀彘》" class="headerlink" title="暑假文言文预习 -《曾子杀彘》"></a>暑假文言文预习 -《曾子杀彘》</h2><h3 id="《曾子杀彘》"><a href="#《曾子杀彘》" class="headerlink" title="《曾子杀彘》"></a>《曾子杀彘》</h3><h3 id="原文"><a href="#原文" class="headerlink" title="原文"></a>原文</h3><p>曾子【1】之妻之【10】市【2】，其子随之而泣。其母曰：“汝还，顾反【13、14】为女【16】杀彘【3】。”妻适市来【4】，曾子欲【18】捕彘杀【17】之。妻止【19】之曰：“特【15】与婴儿戏耳。”曾子曰：“婴儿非与戏【5】也。婴儿非有知也，待【6】父母而学者也，听父母之教。今子【7】欺之，是【12】教子欺也。母欺子，子而【8】不信其母，非所以成教也【9】。”遂【20】烹【11】彘也。</p>
+<h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><p>【1】曾子（前505～前432）：曾参，春秋末年鲁国人，孔子的弟子，字子舆，被尊称为曾子。性情沉静，举止稳重，为人谨慎，待人谦恭，以孝著称。曾提出“慎终追远，民德归厚”的主张和“吾日三省吾身”的修养方法。据传以修身为主要内容的《大学》是他的作品。</p>
+<p>【2】曾子之妻之市：曾子的妻子到集市去。之，前一个作助词“的”后一个作动词“去”。市：集市。</p>
+<p>【3】彘（zhì）：猪。</p>
+<p>【4】适市来：去集市上回来。适：往、回去。</p>
+<p>【5】非与戏：不可同……开玩笑。戏：开玩笑。</p>
+<p>【6】待：依赖。</p>
+<p>【7】子：这里是第二人称尊称“您”的意思。</p>
+<p>【8】而：则，就。</p>
+<p>【9】非所以成教也：这样做就不能把孩子教育好。</p>
+<p>【10】之：到。</p>
+<p>【11】烹（pēng）：烹饪，煮。</p>
+<p>【12】是：这。</p>
+<p>【13】反：同“返”，返回。</p>
+<p>【14】顾反：等到回来。</p>
+<p>【15】特：只、仅、独、不过。</p>
+<p>【16】女：同“汝”，你的意思。</p>
+<p>【17】杀：宰。</p>
+<p>【18】欲：想要。</p>
+<p>【19】止：阻止。</p>
+<p>【20】遂：于是，就。</p>
+<h4 id="译文"><a href="#译文" class="headerlink" title="译文"></a>译文</h4><p>曾子的妻子到集市上去，她的儿子跟随着她在她后面边走边哭。曾子的妻子对儿子说：“你先回去，等我回来后杀猪给你吃。”妻子从集市上回来，曾子就想抓只猪准备杀了它。他的妻子马上阻止他说：“我只不过是跟儿子开了个玩笑罢了。”曾子说：“不可以与儿子开玩笑。儿子什么都不懂，他只学习父母的，听从父母的教导。现在你欺骗了他，这就是在教育他欺骗人。母亲欺骗儿子，儿子就不会再相信他的母亲了，这不是正确教育孩子的方法啊。” 于是曾子就煮猪给孩子吃了。</p>
+<h4 id="启示"><a href="#启示" class="headerlink" title="启示"></a>启示</h4><p>不论在教育子女，还是做人，要注意言传身教，不能以欺骗作为手段，做任何事都要说到做到，不能说谎。要做到言必信，行必果。这样才能获得他人信任。</p>
+<p>　 曾子用自己的行动教育孩子要言而有信，诚实待人，这种教育方法是可取的。</p>
+<p><a target="_blank" rel="noopener" href="https://www.123pan.com/s/qrNRVv-l1gL3">PDF下载</a></p>
+<p>本文资源来自<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9B%BE%E5%AD%90%E6%9D%80%E5%BD%98%EF%BC%88%E6%9B%BE%E5%AD%90%E7%83%B9%E5%BD%98%EF%BC%89/10098194">百度百科</a>和<a target="_blank" rel="noopener" href="https://so.gushiwen.cn/shiwenv_059fd4503f32.aspx">古诗文网</a>，希望能帮到你！</p>
+
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2022-07-11T10:00:00.000Z" itemprop="datePublished">2022-07-11</time>
+</div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/new_study/tags/%E8%AF%AD%E6%96%87/" rel="tag">语文</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+    
+      <article
+id="post-UP_Use"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/new_study/2022/05/08/UP_Use/">UP的常见八种用法</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <h2 id="UP的常见的八种用法"><a href="#UP的常见的八种用法" class="headerlink" title="UP的常见的八种用法"></a>UP的常见的八种用法</h2><p><strong>UP</strong>，是英语中一个<strong>很重要</strong>的单词，有着很多种用法，本期文章将介绍<strong>UP的八种常见的用法和短语举例</strong>！</p>
+<h4 id="我们分八组来记忆与up搭配的词组"><a href="#我们分八组来记忆与up搭配的词组" class="headerlink" title="我们分八组来记忆与up搭配的词组"></a>我们分八组来记忆与up搭配的词组</h4><h5 id="一、up的基本含义是“起来，向上”："><a href="#一、up的基本含义是“起来，向上”：" class="headerlink" title="一、up的基本含义是“起来，向上”："></a>一、up的基本含义是“起来，向上”：</h5><ol>
+<li><p>get up —— 起床                  2. hang up —— 挂起来，挂断电话 </p>
+</li>
+<li><p>keep up with —— 跟上，不落后      4. look up to —— 尊敬，敬佩 </p>
+</li>
+<li><p>pick up —— 捡起                 6. put up —— 立起，建造 </p>
+</li>
+<li><p>wake up —— 醒来                8. stand up —— 起立</p>
+</li>
+</ol>
+<h5 id="二、实际上up更常用来加强语气，暗含“完全，彻底”之意："><a href="#二、实际上up更常用来加强语气，暗含“完全，彻底”之意：" class="headerlink" title="二、实际上up更常用来加强语气，暗含“完全，彻底”之意："></a>二、实际上up更常用来加强语气，暗含“完全，彻底”之意：</h5><ol>
+<li><p>clean up —— 清除                2. clear up—— 澄清，放晴 </p>
+</li>
+<li><p>dress up —— 盛装                4. dry up —— 干涸，烘干 </p>
+</li>
+<li><p>think up —— 仔细思考            6. tie up —— 绑紧，捆好 </p>
+</li>
+<li><p>make up one’s minds ——下决心     8. shut up —— 闭嘴</p>
+</li>
+</ol>
+<h5 id="三、up并无实际意义，仅起加强语气作用的场合也很常见："><a href="#三、up并无实际意义，仅起加强语气作用的场合也很常见：" class="headerlink" title="三、up并无实际意义，仅起加强语气作用的场合也很常见："></a>三、up并无实际意义，仅起加强语气作用的场合也很常见：</h5><ol>
+<li><p>back（支持）up ——支持，支援     2. back（倒退）up —— 倒退，倒车 </p>
+</li>
+<li><p>be mixed up —— 糊涂，混合        4. blows（爆炸）up —— 爆炸 </p>
+</li>
+<li><p>check up —— 检查                6. cheer up —— 鼓舞，使高兴 </p>
+</li>
+<li><p>draw up —— 起草　　　           8. get mixed up —— 混乱，混淆</p>
+</li>
+<li><p>build up ——建立，增强           10.look up —— 查出 </p>
+</li>
+<li><p>make up —— 虚构，弥补         12.mix up—— 糊涂，混淆 </p>
+</li>
+<li><p>show up —— 出现，露面          14. to speed up —— 加快速度 </p>
+</li>
+<li><p>stir up —— 激起，鼓动          16. take up ——占据，吸收</p>
+</li>
+</ol>
+<h5 id="四、up常和动词搭配表示“碎裂，分开”："><a href="#四、up常和动词搭配表示“碎裂，分开”：" class="headerlink" title="四、up常和动词搭配表示“碎裂，分开”："></a>四、up常和动词搭配表示“碎裂，分开”：</h5><ol>
+<li><p>break up —— 分裂，打碎    2. chew up —— 嚼碎 </p>
+</li>
+<li><p>tear up —— 撕碎，取消     4. chop up —— 剁碎，砍碎 </p>
+</li>
+<li><p>cut up —— 切碎            6. smash up —— 击毁</p>
+</li>
+</ol>
+<h5 id="五、up还有“结束，一点也不剩”的意思："><a href="#五、up还有“结束，一点也不剩”的意思：" class="headerlink" title="五、up还有“结束，一点也不剩”的意思："></a>五、up还有“结束，一点也不剩”的意思：</h5><ol>
+<li><p>be up —— 时间到       2. give up —— 放弃，投降 </p>
+</li>
+<li><p>let up —— 停止         4. burn up —— 完全烧尽 </p>
+</li>
+<li><p>buy up —— 全部买尽     6. eat up —— 吃光</p>
+</li>
+</ol>
+<h5 id="六、up常含“持续，维持”的引申义："><a href="#六、up常含“持续，维持”的引申义：" class="headerlink" title="六、up常含“持续，维持”的引申义："></a>六、up常含“持续，维持”的引申义：</h5><ol>
+<li><p>wait up for —— 熬夜等人        2. stay up —— 熬夜 </p>
+</li>
+<li><p>keep up —— 保持，维持        4. hold up —— 维持，劫持，耽搁 </p>
+</li>
+<li><p>stand （经受）up —— 经得住    6. stand（坚持） up for —— 坚持，支持</p>
+</li>
+</ol>
+<h5 id="八、up还有一些特殊含义："><a href="#八、up还有一些特殊含义：" class="headerlink" title="八、up还有一些特殊含义："></a>八、up还有一些特殊含义：</h5><ol>
+<li><p>be up to —— 由某人决定    2. be up to—— 暗中做某事 </p>
+</li>
+<li><p>stand sb up —— 爽约　     4. take up —— 学习，研究 </p>
+</li>
+<li><p>throw up —— 呕吐　       6. bring up（成长）—— 抚养，教养</p>
+</li>
+</ol>
+<p><img src="UP1.png"><br><img src="UP2.png"><br><a target="_blank" rel="noopener" href="https://www.123pan.com/s/qrNRVv-LogL3">UP单词用法 - PDF下载</a></p>
+<p><a target="_blank" rel="noopener" href="https://docs.qq.com/pdf/DRUV1ZU5EaElqQWZB">腾讯文档在线浏览</a></p>
+<p><em>下期预告：七上作文总汇</em></p>
+
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2022-05-08T03:05:00.000Z" itemprop="datePublished">2022-05-08</time>
+</div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/new_study/tags/%E8%8B%B1%E8%AF%AD/" rel="tag">英语</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+
+  
+</div>
+
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+    
+      
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/new_study/tags/%E8%8B%B1%E8%AF%AD/" rel="tag">英语</a></li><li class="tag-list-item"><a class="tag-list-link" href="/new_study/tags/%E8%AF%AD%E6%96%87/" rel="tag">语文</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/new_study/2022/07/11/wen01/">暑假文言文预习（一）</a>
+          </li>
+        
+          <li>
+            <a href="/new_study/2022/05/08/UP_Use/">UP的常见八种用法</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/new_study/archives/2022/">2022</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            新的学习网站 &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@6.0.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+
+
+
+<script src="/new_study/dist/build.js?1654266144177.js"></script>
+
+
+<script src="/new_study/dist/custom.js?1654266144177.js"></script>
+
+
+
+
+
 
 
 
@@ -405,4 +456,5 @@ wake up —— 醒来                8. stand up —— 起...
 
 
 </body>
+
 </html>
