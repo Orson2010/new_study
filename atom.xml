@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>新的学习网站</title>
+  <title>Aug的奇妙学习网</title>
   
-  <subtitle>（由“Study English”迁移）</subtitle>
+  <subtitle>书山有路勤为径，学海无涯苦作舟。</subtitle>
   <link href="https://orson2010.github.io/new_study/atom.xml" rel="self"/>
   
   <link href="https://orson2010.github.io/new_study/"/>
